@@ -1,0 +1,27 @@
+%h1 Listing venues
+
+%table
+  %tr
+    %th Foursquare
+    %th Name
+    %th Address
+    %th Latitude
+    %th Longitude
+    %th
+    %th
+    %th
+
+  - @venues.each do |venue|
+    %tr
+      %td= venue.foursquare_id
+      %td= venue.name
+      %td= venue.address
+      %td= venue.latitude
+      %td= venue.longitude
+      %td= link_to 'Show', venue
+      %td= link_to 'Edit', edit_venue_path(venue)
+      %td= link_to 'Destroy', venue, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Venue', new_venue_path
