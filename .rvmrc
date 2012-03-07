@@ -1,1 +1,1 @@
-rvm ruby 1.9.2p180@adventeur --create
+rvm all do ruby 1.9.2@adventeur '--create'
