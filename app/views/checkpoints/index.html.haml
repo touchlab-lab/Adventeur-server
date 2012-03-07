@@ -1,0 +1,23 @@
+%h1 Listing checkpoints
+
+%table
+  %tr
+    %th Tout
+    %th Venue
+    %th Description
+    %th
+    %th
+    %th
+
+  - @checkpoints.each do |checkpoint|
+    %tr
+      %td= checkpoint.tout
+      %td= checkpoint.venue_id
+      %td= checkpoint.description
+      %td= link_to 'Show', checkpoint
+      %td= link_to 'Edit', edit_checkpoint_path(checkpoint)
+      %td= link_to 'Destroy', checkpoint, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Checkpoint', new_checkpoint_path
