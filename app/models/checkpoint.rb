@@ -1,4 +1,4 @@
 class Checkpoint < ActiveRecord::Base
-  belongs_to :venues
+  belongs_to :venue
   belongs_to :adventure
 end
