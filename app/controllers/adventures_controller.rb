@@ -40,7 +40,7 @@ class AdventuresController < ApplicationController
   # POST /adventures
   # POST /adventures.json
   def create
-    @adventure = Adventure.new(params[:adventure])
+    @adventure = current_user.adventures.new(params[:adventure])
 
     respond_to do |format|
       if @adventure.save
