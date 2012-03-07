@@ -1,3 +1,3 @@
 class Venue < ActiveRecord::Base
-  belongs_to :checkpoint
+  has_many :checkpoint
 end
