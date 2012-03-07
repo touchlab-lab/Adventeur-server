@@ -2,3 +2,7 @@
   User: #{@user.name}
 %p
   Email: #{@user.email if @user.email}
+
+.create-an-adventure
+  = link_to("Create a New Adventure", new_adventure_path)
+

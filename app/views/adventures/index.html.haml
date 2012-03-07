@@ -1,0 +1,21 @@
+%h1 Listing adventures
+
+%table
+  %tr
+    %th Name
+    %th Description
+    %th
+    %th
+    %th
+
+  - @adventures.each do |adventure|
+    %tr
+      %td= adventure.name
+      %td= adventure.description
+      %td= link_to 'Show', adventure
+      %td= link_to 'Edit', edit_adventure_path(adventure)
+      %td= link_to 'Destroy', adventure, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Adventure', new_adventure_path

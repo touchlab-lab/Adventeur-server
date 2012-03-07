@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @adventure.name
+%p
+  %b Description:
+  = @adventure.description
+
+= link_to 'Edit', edit_adventure_path(@adventure)
+\|
+= link_to 'Back', adventures_path
