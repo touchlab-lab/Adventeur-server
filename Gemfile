@@ -22,3 +22,10 @@ gem "database_cleaner", ">= 0.7.1", :group => :test
 gem "launchy", ">= 2.0.5", :group => :test
 gem "devise", ">= 2.0.4"
 gem "bootstrap-sass", ">= 2.0.1"
+
+
+#JUST IN CASE GEMS - Delete if we do not use
+gem 'quimby'
+gem 'fakeweb'
+gem 'eventmachine'
+gem 'vcr'
