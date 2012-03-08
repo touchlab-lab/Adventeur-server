@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Foursquare:
+  = @venue.foursquare_id
+%p
+  %b Name:
+  = @venue.name
+%p
+  %b Address:
+  = @venue.address
+%p
+  %b Latitude:
+  = @venue.latitude
+%p
+  %b Longitude:
+  = @venue.longitude
+
+= link_to 'Edit', edit_venue_path(@venue)
+\|
+= link_to 'Back', venues_path

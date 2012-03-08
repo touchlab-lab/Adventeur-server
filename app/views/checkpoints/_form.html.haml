@@ -1,0 +1,19 @@
+= form_for @checkpoint do |f|
+  -if @checkpoint.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@checkpoint.errors.count, "error")} prohibited this checkpoint from being saved:"
+      %ul
+        - @checkpoint.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :tout
+    = f.text_field :tout
+  .field
+    = f.label :venue_id
+    = f.number_field :venue_id
+  .field
+    = f.label :description
+    = f.text_area :description
+  .actions
+    = f.submit 'Save'

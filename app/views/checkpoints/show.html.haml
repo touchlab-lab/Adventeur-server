@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Tout:
+  = @checkpoint.tout
+%p
+  %b Venue:
+  = @checkpoint.venue_id
+%p
+  %b Description:
+  = @checkpoint.description
+
+= link_to 'Edit', edit_checkpoint_path(@checkpoint)
+\|
+= link_to 'Back', checkpoints_path

@@ -1,0 +1,25 @@
+= form_for @venue do |f|
+  -if @venue.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@venue.errors.count, "error")} prohibited this venue from being saved:"
+      %ul
+        - @venue.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :foursquare_id
+    = f.number_field :foursquare_id
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :address
+    = f.text_field :address
+  .field
+    = f.label :latitude
+    = f.text_field :latitude
+  .field
+    = f.label :longitude
+    = f.text_field :longitude
+  .actions
+    = f.submit 'Save'

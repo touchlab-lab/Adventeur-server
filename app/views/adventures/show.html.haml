@@ -7,6 +7,29 @@
   %b Description:
   = @adventure.description
 
+.create-a-checkpoint
+  = link_to("Create a New Checkpoint", new_checkpoint_path)
+
+.checkpoints
+  %table
+    %tr
+      %th Tout
+      %th Venue
+      %th Description
+      %th
+      %th
+      %th
+
+    - @adventure.checkpoints.each do |checkpoint|
+      %tr
+        %td= checkpoint.tout
+        %td= checkpoint.venue_id
+        %td= checkpoint.description
+        %td= link_to 'Show', checkpoint
+        %td= link_to 'Edit', edit_checkpoint_path(checkpoint)
+        %td= link_to 'Destroy', checkpoint, :confirm => 'Are you sure?', :method => :delete
+
+ 
 = link_to 'Edit', edit_adventure_path(@adventure)
 \|
 = link_to 'Back', adventures_path
