@@ -14,14 +14,18 @@ Venue.delete_all
 Checkpoint.delete_all
 adventure = Adventure.create! :name => 'Startup Bus NYC 2012', :description => 'Description here'
 
+FakeWeb.allow_net_connect = false
 venues = {}
 ["4bded100921d952185016932", "4b05866ef964a520e16122e3", "4b058660f964a520465f22e3", "4b37d793f964a520454725e3", "4ad4c000f964a5208ceb20e3"].each do |id|
+  FakeWeb.register_uri(:get, "https://api.foursquare.com/v2/venues/#{id}?client_id=#{Adventeur::Application.config.foursquare_id}&client_secret=#{Adventeur::Application.config.foursquare_secret}",
+                   :response => File.expand_path("spec/faker/venues/#{id}.json"))
+  
   venues[id] = Venue.fetch_and_add!(id)
 end
 
-adventure.checkpoints.create!({:tout => "tout nyc", :description => "desc", :venue_id => venues['4bded100921d952185016932'].id})
-adventure.checkpoints.create!({:tout => "tout nash", :description => "desc", :venue_id => venues['4b05866ef964a520e16122e3'].id})
-adventure.checkpoints.create!({:tout => "tout grace", :description => "desc", :venue_id => venues['4b058660f964a520465f22e3'].id })
-adventure.checkpoints.create!({:tout => "tout baton", :description => "desc", :venue_id => venues['4b37d793f964a520454725e3'].id})
-adventure.checkpoints.create!({:tout => "tout san", :description => "desc", :venue_id => venues['4ad4c000f964a5208ceb20e3'].id})
+adventure.checkpoints.create!({:tout => "tout nyc", :description => "desc", :venue_id => venues['4bded100921d952185016932'].id, :latitude => venues['4bded100921d952185016932'].latitude, :longitude => venues['4bded100921d952185016932'].longitude })
+adventure.checkpoints.create!({:tout => "tout nash", :description => "desc", :venue_id => venues['4b05866ef964a520e16122e3'].id, :latitude => venues['4b05866ef964a520e16122e3'].latitude, :longitude => venues['4b05866ef964a520e16122e3'].longitude })
+adventure.checkpoints.create!({:tout => "tout grace", :description => "desc", :venue_id => venues['4b058660f964a520465f22e3'].id, :latitude => venues['4b058660f964a520465f22e3'].latitude, :longitude => venues['4b058660f964a520465f22e3'].longitude })
+adventure.checkpoints.create!({:tout => "tout baton", :description => "desc", :venue_id => venues['4b37d793f964a520454725e3'].id, :latitude => venues['4b37d793f964a520454725e3'].latitude, :longitude => venues['4b37d793f964a520454725e3'].longitude })
+adventure.checkpoints.create!({:tout => "tout san", :description => "desc", :venue_id => venues['4ad4c000f964a5208ceb20e3'].id, :latitude => venues['4ad4c000f964a5208ceb20e3'].latitude, :longitude => venues['4ad4c000f964a5208ceb20e3'].longitude })
    
