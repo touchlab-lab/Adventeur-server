@@ -56,12 +56,16 @@ adventure5.checkpoints.create!({:tout => "Beer-battered asparagus. Yes.", :descr
 adventure5.checkpoints.create!({:tout => "BBQ and Live Music. It does not get better.", :description => "Classic, steady Stubbs.  Try the brisket and chili. Definitely grab a Shiner and get ready to rock out!", :venue_id => venues['40fb0f00f964a520fc0a1fe3'].id, :latitude => venues['40fb0f00f964a520fc0a1fe3'].latitude, :longitude => venues['40fb0f00f964a520fc0a1fe3'].longitude })
 adventure5.checkpoints.create!({:tout => "Lone Star Livin'. Finger Lickin'.", :description => "Downtown BBQ off the beaten path, but well worth it!  The most delicious wild boar ribs I've ever had.", :venue_id => venues['45fbfa6df964a5206c441fe3'].id, :latitude => venues['45fbfa6df964a5206c441fe3'].latitude, :longitude => venues['45fbfa6df964a5206c441fe3'].longitude })
 
-
 # Vintage tour of austin
 adventure2 = Adventure.create! :name => 'Vintage Tour of Austin', :description => 'Take a tour around the vintage shops of Austin and get some stylish threads. I guarentee that no one else will be wearing that dress.'
+adventure2.checkpoints.create!({:tout => "Jewelry and champagne at Eliza Page.", :description => "A ShopAcrossTexas.com Best Store in Town, this Austin jewelry boutique carries upscale baubles from more than 30 independent designers, many of whom are Texas natives.", :venue_id => venues['4b255d5bf964a520b47024e3'].id, :latitude => venues['4b255d5bf964a520b47024e3'].latitude, :longitude => venues['4b255d5bf964a520b47024e3'].longitude })
+adventure2.checkpoints.create!({:tout => "You'll want to MissBehave ;)", :description => "Just about the cutest boutique you will ever see. Fun, flirtatious, and very girly. A really fabulous atmosphere", :venue_id => venues['4b253b76f964a5206b6e24e3'].id, :latitude => venues['4b253b76f964a5206b6e24e3'].latitude, :longitude => venues['4b253b76f964a5206b6e24e3'].longitude })
+adventure2.checkpoints.create!({:tout => "So much more than just another Austin boutique...", :description => "Girl Next Door is the Austin shopping experience for women, carrying the hottest designers on the market.", :venue_id => venues['4beb1a5062c0c92811b4e1d4'].id, :latitude => venues['4beb1a5062c0c92811b4e1d4'].latitude, :longitude => venues['4beb1a5062c0c92811b4e1d4'].longitude })
+adventure2.checkpoints.create!({:tout => "Time for some Prototyping, dude!", :description => "Prototype Vintage Design offers furniture, art, fashion, jewelry, lighting, glassware and more in an environment both inviting and inspiring.", :venue_id => venues['4ac8fc7df964a520c3bd20e3'].id, :latitude => venues['4ac8fc7df964a520c3bd20e3'].latitude, :longitude => venues['4ac8fc7df964a520c3bd20e3'].longitude })
+adventure2.checkpoints.create!({:tout => "Vintage finds at reasonable prices for dessert", :description => "Every vintage piece here is a winner, whether it’s a batwing-sleeved dress, a Stevie Nicks–ish crystal pendant, or an appliquéd silk peasant blouse.", :venue_id => venues['4ac900a1f964a520ecbd20e3'].id, :latitude => venues['4ac900a1f964a520ecbd20e3'].latitude, :longitude => venues['4ac900a1f964a520ecbd20e3'].longitude })
 
 # Feathers 4ac900a1f964a520ecbd20e3, 
-# prototype 4ac8fc7df964a520c3bd20e3,  
+# prototype 4ac8fc7df964a520c3bd20e3,   
 # flashback, 
 # big berthas, 
 # uncommon goods, 
