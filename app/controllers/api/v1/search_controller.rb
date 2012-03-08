@@ -8,7 +8,7 @@ class Api::V1::SearchController < ActionController::Base
   end
   
   def intersect
-    @checkpoints = Checkpoint.where(:venue_id => params["search"]["venue"]).limit(10)
+    @checkpoints = Checkpoint.where(:venue_id => params["search"]["venue_id"]).limit(10)
     render 'api/v1/search'
     
   end

@@ -13,4 +13,6 @@ Adventeur::Application.routes.draw do
   resources :adventures
   resources :checkpoints
   match '/api/v1/search/nearest', :to => "api/v1/search#nearest"
+  match '/api/v1/search/intersect', :to => "api/v1/search#intersect"
+  
 end
