@@ -1,0 +1,528 @@
+
+.clear {
+  clear: both;
+}
+.box {
+  background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.65); 
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#5c000000', endColorstr='#5c000000');
+  color: white;
+  margin: 20px auto 0;
+  width: 460px;
+  text-align: center;
+}
+.box h2 {
+  color: white;
+}
+.box label,input-label {
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+.box input[type='text'],
+.box input[type='text']:focus {
+  background: #ffffff;
+  height: auto;
+  font-size: 12px;
+  color: #5c5c5c;
+  font-style: italic;
+  padding: 6px 18px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, .33);
+  -moz-box-shadow: inset 0 2px 2px rgba(0, 0, 0, .33);
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, .33);
+  border: 0 !important;
+  position: relative;
+  z-index: 3;
+}
+.box.rounded input[type='text'] {
+  -webkit-border-radius: 22px;
+  -moz-border-radius: 22px;
+  border-radius: 22px;
+}
+.box .site-title {
+   padding-bottom: 20px;
+   padding-top: 20px;
+}
+.box .logo-container {
+  padding: 28px 40px 0;
+}
+.box .logo-container img.logo {
+  width: 364px;
+  display: inline-block;
+}
+.box .sign-up-container {
+  padding: 0 40px 0;
+  margin-bottom: -35px;
+}
+.box .sign-up-container .tagline {
+  text-align: center;
+  display: inline-block;
+  font-size: 18px;
+  color: white;
+  margin: 0;
+  padding: 3px 0;
+}
+.box .sign-up-container p.description {
+  font-size: 16px;
+  color: white;
+  margin: 0;
+  text-align: left;
+  padding: 24px 0 42px;
+}
+.box .sign-up-container .sign-up {
+  text-align: left;
+  padding: 0 0 4px;
+}
+.box .sign-up-container .sign-up input[type="text"] {
+  width: 226px;
+}
+
+.box .sign-up-container .go {
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+  float: right;
+  margin: 24px 0 0;
+  text-shadow: 0 -1px rgba(0, 0, 0, .4);
+  display: inline-block;
+  padding: 5px 37px 6px;
+  -webkit-border-radius: 22px;
+  -moz-border-radius: 22px;
+  border-radius: 22px;
+  cursor: pointer;
+  background: url(http://beta.launchrock.com/images/green-button.png) top left repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#47c939), to(#127c06));
+  background-image: -moz-linear-gradient(top, #47c939, #127c06);
+  background-image: -ms-linear-gradient(top, #47c939, #127c06);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #47c939), color-stop(100%, #127c06));
+  background-image: -webkit-linear-gradient(top, #47c939, #127c06);
+  background-image: -o-linear-gradient(top, #47c939, #127c06);
+  background-image: linear-gradient(top, #47c939, #127c06);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 2px 0 rgba(0, 0, 0, .2);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 2px 0 rgba(0, 0, 0, .2);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 2px 0 rgba(0, 0, 0, .2);
+  text-decoration: none;
+}
+.box .sign-up-form-container {
+  position: relative;
+  text-align: right;
+  padding: 0 0 10px;
+  top: -6px;
+}
+.box .sign-up-form-container .inner {
+  background: url(http://beta.launchrock.com/images/bg-top.png) no-repeat top;
+  padding: 54px 0 0 27px;
+  text-align: left;
+}
+.box .sign-up-form-container .input-block {
+  display: inline-block;
+  width: 175px;
+  text-align: left;
+  margin: 0 13px;
+}
+.box .sign-up-form-container .input-block input {
+  width: 139px;
+}
+.box .sign-up-form-container .input-block.error label {
+  color: #d50000;
+}
+.box .sign-up-form-container .input-block.large {
+  text-align: left !important;
+  width: 390px;
+}
+.box .sign-up-form-container .input-block.large input {
+  width: 344px;
+}
+.box .sign-up-form-container .input-block.medium {
+  text-align: left !important;
+  width: 288px;
+}
+.box .sign-up-form-container .input-block.medium input {
+  width: 232px;
+}
+.box .sign-up-form-container .trim.bottom {
+  height: 45px;
+  content: "";
+  text-align: left;
+  overflow: hidden;
+  background: url(http://beta.launchrock.com/images/bg-bottom.png) no-repeat top;
+}
+.box .sign-up-form-container .trim.bottom span {
+  color: #fff;
+  background: #d50000;
+  float: left;
+  font-size: 12px;
+  font-weight: bold;
+
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  left: 42px;
+      margin: 2px 0;
+    padding: 0 8px;
+    position: relative;
+    top: 0;
+}
+.box .sign-up-form-container .trim.bottom .go {
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+  margin: 8px 40px 0 0;
+  text-shadow: 0 -1px rgba(0, 0, 0, .4);
+  display: inline-block;
+  padding: 5px 37px 6px;
+  -webkit-border-radius: 22px;
+  -moz-border-radius: 22px;
+  cursor: pointer;
+  border-radius: 22px;
+  background: url(http://beta.launchrock.com/images/green-button.png) top left repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#47c939), to(#127c06));
+  background-image: -moz-linear-gradient(top, #47c939, #127c06);
+  background-image: -ms-linear-gradient(top, #47c939, #127c06);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #47c939), color-stop(100%, #127c06));
+  background-image: -webkit-linear-gradient(top, #47c939, #127c06);
+  background-image: -o-linear-gradient(top, #47c939, #127c06);
+  background-image: linear-gradient(top, #47c939, #127c06);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 2px 0 rgba(0, 0, 0, .2);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 2px 0 rgba(0, 0, 0, .2);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 2px 0 rgba(0, 0, 0, .2);
+  text-decoration: none;
+  float: right;
+}
+.box .sharing-container {
+  padding: 0;
+  margin-bottom: -50px;
+
+}
+.box .sharing-container p.description {
+  font-size: 18px;
+  line-height: 20px;
+  color: white;
+  margin: 0 40px;
+  text-align: center;
+  padding: 24px 0 42px;
+}
+.box .sharing-container .sharing {
+  background: rgba(0, 0, 0, .4);
+  padding: 25px 0 0;
+  position: relative;
+}
+
+.box .sharing-container .sharing .sharing-form {
+  padding: 0 0 10px;
+}
+.box .sharing-container .sharing .sharing-form .import {
+  position: absolute;
+  right: 54px;
+  text-align: right;
+  cursor: pointer;
+  margin-top: -27px;
+  z-index: 4;
+}
+.box .sharing-container .sharing .sharing-form .import:after {
+  position: absolute;
+  background: transparent;
+  width: 50px;
+  height: 20px;
+  content: "";
+  display: inline-block;
+  top: -20px;
+  right: 0;
+}
+.box .sharing-container .sharing .sharing-form .import label {
+  color: #556e84 !important;
+  font-size: 12px;
+  font-weight: normal !important;
+  margin-top: -27px;
+  width: auto !important;
+}
+.box .sharing-container .sharing .sharing-form .import:hover label {
+  opacity: .7;
+}
+.box .sharing-container .sharing .sharing-form .import label:before {
+  width: 12px;
+  height: 13px;
+  background: url(http://beta.launchrock.com/images/address-icon.png) no-repeat;
+  content: "";
+  display: inline-block;
+  margin: 0 4px -2px 0;
+}
+.box .sharing-container .sharing .sharing-form .import .bubble {
+  display: none;
+  margin-right: -10px;
+  width: 255px;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#5c6b7b), to(#4f5f70));
+  background-image: -moz-linear-gradient(top, #5c6b7b, #4f5f70);
+  background-image: -ms-linear-gradient(top, #5c6b7b, #4f5f70);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5c6b7b), color-stop(100%, #4f5f70));
+  background-image: -webkit-linear-gradient(top, #5c6b7b, #4f5f70);
+  background-image: -o-linear-gradient(top, #5c6b7b, #4f5f70);
+  background-image: linear-gradient(top, #5c6b7b, #4f5f70);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5c6b7b', endColorstr='#4f5f70', GradientType=0);
+  border-top: 1px solid #84909b;
+  border-left: 1px solid #616f7f;
+  border-right: 1px solid #616f7f;
+  border-bottom: 1px solid #5d6c7b;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .8);
+  -moz-box-shadow: 0 3px 9px rgba(0, 0, 0, .8);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, .8);
+}
+.box .sharing-container .sharing .sharing-form .import:hover .bubble {
+  display: block;
+}
+.box .sharing-container .sharing .sharing-form .import .bubble:after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  right: 20px;
+  top: -8px;
+  z-index: 5;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #5c6b7c;
+}
+.box .sharing-container .sharing .sharing-form .import .bubble:before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  right: 20px;
+  top: -9px;
+  z-index: 4;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #84909b;
+}
+.box .sharing-container .sharing .sharing-form .import .bubble span {
+  display: block;
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+  margin: 2px 12px;
+  text-shadow: 0 -1px #343434;
+}
+.box .sharing-container .sharing .sharing-form .import .bubble a {
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  width: 35px;
+  height: 45px;
+  color: white;
+  margin: 3px 0 10px;
+  line-height: 88px;
+  font-size: 12px;
+  background: url(http://beta.launchrock.com/images/share-icons.png) no-repeat;
+}
+.box .sharing-container .sharing .sharing-form .import .bubble a.gmail {
+  background-position: 0 0;
+}
+.box .sharing-container .sharing .sharing-form .import .bubble a.yahoo {
+  background-position: -41px 0;
+}
+.box .sharing-container .sharing .sharing-form .import .bubble a.aol {
+  background-position: -83px 0;
+}
+.box .sharing-container .sharing .sharing-form .import .bubble a.msn {
+  background-position: -125px 0;
+}
+.box .sharing-container .sharing .sharing-form .import .bubble a.osx {
+  background-position: -167px 0;
+}
+.box .sharing-container .sharing .sharing-form .import .bubble a.plaxo {
+  background-position: -209px 0;
+}
+.box .sharing-container .tip {
+  position: absolute;
+  width: 153px;
+  height: 36px;
+  background: url(http://beta.launchrock.com/images/share-arrow.png) no-repeat;
+  color: white;
+  text-align: left;
+  line-height: 17px;
+  font-size: 14px;
+  text-shadow: 0 -1px #585858;
+  font-weight: bold;
+  padding: 6px 12px;
+  left: -2108px;
+  top: 10px;
+}
+.box .sharing-container .stats-tip {
+  padding: 4px 12px;
+  height: 40px;
+  font-size: 12px;
+  line-height: 13px;
+  top: 191px;
+}
+.box .sharing-container .sharing .sharing-form label {
+  font-weight: bold;
+  font-size: 12px;
+  display: inline-block;
+  width: 110px;
+  color: white;
+}
+.box .sharing-container .sharing .sharing-form input,
+.box .sharing-container .sharing .sharing-form input:focus {
+  width: 250px;
+  background: #1d1c19;
+  padding: 5px 7px;
+  margin: 2px 0 4px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  font-size: 12px;
+  color: #888888 !important;
+  -webkit-box-shadow: 0 0 0;
+  -moz-box-shadow: 0 0 0;
+  box-shadow: 0 0 0;
+  font-style: normal;
+}
+.box .sharing-container .sharing .stats {
+  margin: 0;
+  padding: 0 0 30px;
+  border-top: 1px solid rgba(244, 244, 244, .14);
+  border-bottom: 1px solid rgba(244, 244, 244, .14);
+  background: url(http://beta.launchrock.com/images/texture-bg.png);
+  -webkit-box-shadow: inset 0 5px 35px rgba(0, 0, 0, .8);
+  -moz-box-shadow: inset 0 0 35px rgba(0, 0, 0, .8);
+  box-shadow: inset 0 0 35px rgba(0, 0, 0, .8);
+  text-align: center;
+}
+.box .sharing-container .sharing .stats .arrow {
+  width: 200px;
+  height: 50px;
+  overflow: hidden;
+  display: inline-block;
+}
+.box .sharing-container .sharing .stats .arrow:after {
+  display: inline-block;
+  background: rgba(244, 244, 244, .19);
+  -webkit-box-shadow: 0 5px 35px rgba(0, 0, 0, .5);
+  -moz-box-shadow: 0 0 35px rgba(0, 0, 0, .5);
+  box-shadow: 0 0 35px rgba(0, 0, 0, .5);
+  content: "";
+  width: 45px;
+  height: 45px;
+  margin-top: -30px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ie-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.box .sharing-container .sharing .stats label {
+  color: #bebebe;
+  font-size: 18px;
+  display: inline-block;
+  font-weight: normal;
+  position: relative;
+  top: -30px;
+}
+.box .sharing-container .sharing .stats .clicks {
+  display: inline-block;
+  margin: 0 12px;
+}
+.box .sharing-container .sharing .stats .clicks:after {
+  content: "Clicks";
+  font-size: 13px;
+  color: white;
+  text-align: center;
+  display: block;
+  margin: 3px 0;
+}
+.box .sharing-container .sharing .stats .clicks span {
+  width: 32px;
+  height: 44px;
+  display: inline-block;
+  background: url(http://beta.launchrock.com/images/digit-bg.png);
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+  line-height: 43px;
+}
+.box .sharing-container .sharing .stats .sign-ups {
+  display: inline-block;
+}
+.box .sharing-container .sharing .stats .sign-ups:after {
+  content: "Sign Ups";
+  font-size: 13px;
+  color: white;
+  text-align: center;
+  display: block;
+  margin: 3px 0;
+}
+.box .sharing-container .sharing .stats .sign-ups span {
+  width: 32px;
+  height: 44px;
+  display: inline-block;
+  background: url(http://beta.launchrock.com/images/digit-bg.png);
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+  line-height: 43px;
+}
+.box .sharing-container .social {
+  padding: 14px;
+  height: 15px;
+  float: right;
+}
+.box .sharing-container .social span {
+  color: #aaa;
+  font-size: 11px;
+  font-weight: bold;
+}
+.box .sharing-container .social a {
+  display: inline-block;
+  text-decoration: none;
+  text-indent: -9999em;
+  background: url(http://beta.launchrock.com/images/16x16_icons_all.png);
+  width: 16px;
+  height: 16px;
+  margin: 0 0 0 4px;
+}
+.box .sharing-container .social a.instagram {
+  background-position: 0 0;
+}
+.box .sharing-container .social a.rss {
+  background-position: -17px 0;
+}
+.box .sharing-container .social a.youtube {
+  background-position: -33px 0;
+}
+.box .sharing-container .social a.twitter {
+  background-position: -49px 0;
+}
+.box .sharing-container .social a.pinterest {
+  background-position: -66px 0;
+}
+.box .sharing-container .social a.facebook {
+  background-position: -82px 0;
+}
+.box .sharing-container a.tumblr {
+  background-position: -98px 0;
+}
+.box .sharing-container a.vimeo {
+  background-position: -114px 0;
+}
+.box .sharing-container a.github {
+  background-position: -130px 0;
+}
+.dlrbg {
+    position:fixed;
+    top:0;
+    left:0;
+}
+.site {
+  position:relative; margin: auto; margin-top:40px; 
+}
+.titlebar { width:100%;position:absolute; top:0; left:0; height: 38px; color: #fff; background: #000; text-align: center; font-size: 12px; margin: 0 0 50px; line-height: 37px; }
