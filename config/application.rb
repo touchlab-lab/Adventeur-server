@@ -60,5 +60,8 @@ module Adventeur
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+    
+    config.foursquare_id = 'EIXKREYRWPCWCDCEWYR5EZPT125KDTJ0NYZH1IBWP3GSRDHO'
+    config.foursquare_secret = 'RM2KDL1VJYWQBFVPWVKQMC4HZXIMJ5TDEIBAPQ5UUDCGA053'
   end
 end
