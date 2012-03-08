@@ -6,10 +6,11 @@ class User < ActiveRecord::Base
          :token_authenticatable
   
   has_many :adventures
-
+  has_many :checkins
                   
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :name, :email, :password, :password_confirmation, :remember_me, :authentication_token
+  attr_accessible :name, :email, :password, :password_confirmation, :remember_me, :authentication_token,
+    :foursq_token
   
 
   def self.find_foursq_user(token)

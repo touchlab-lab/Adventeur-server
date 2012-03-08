@@ -15,3 +15,7 @@ end
 Adventure.blueprint do
   # Attributes here
 end
+
+Checkin.blueprint do
+  # Attributes here
+end

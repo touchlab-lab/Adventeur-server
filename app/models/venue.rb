@@ -1,5 +1,6 @@
 class Venue < ActiveRecord::Base
   has_many :checkpoints
+  has_many :checkins
 #  acts_as_mappable :default_units => :miles, 
  #                  :default_formula => :sphere, 
   #                 :distance_field_name => :distance,
@@ -17,7 +18,7 @@ class Venue < ActiveRecord::Base
     address = json["response"]["venue"]["location"]["address"]
     latitude = json["response"]["venue"]["location"]["lat"]
     longitude = json["response"]["venue"]["location"]["lng"]
-    Venue.create!({:name => name, :address => address, :latitude => latitude, :longitude => longitude})
+    Venue.create!({:name => name, :address => address, :latitude => latitude, :longitude => longitude, :foursquare_id => id})
     
   end
 end
