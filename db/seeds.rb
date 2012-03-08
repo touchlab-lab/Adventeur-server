@@ -19,9 +19,9 @@ venues = {}
   venues[id] = Venue.fetch_and_add!(id)
 end
 
-adventure.checkpoints.create!({:tout => "tout nyc", :description => "desc", :venue_id => venues['4bded100921d952185016932']})
-adventure.checkpoints.create!({:tout => "tout nash", :description => "desc", :venue_id => venues['4b05866ef964a520e16122e3']})
-adventure.checkpoints.create!({:tout => "tout grace", :description => "desc", :venue_id => ['4b058660f964a520465f22e3'] })
-adventure.checkpoints.create!({:tout => "tout baton", :description => "desc", :venue_id => ['4b37d793f964a520454725e3']})
-adventure.checkpoints.create!({:tout => "tout san", :description => "desc", :venue_id => ['4ad4c000f964a5208ceb20e3']})
+adventure.checkpoints.create!({:tout => "tout nyc", :description => "desc", :venue_id => venues['4bded100921d952185016932'].id})
+adventure.checkpoints.create!({:tout => "tout nash", :description => "desc", :venue_id => venues['4b05866ef964a520e16122e3'].id})
+adventure.checkpoints.create!({:tout => "tout grace", :description => "desc", :venue_id => venues['4b058660f964a520465f22e3'].id })
+adventure.checkpoints.create!({:tout => "tout baton", :description => "desc", :venue_id => venues['4b37d793f964a520454725e3'].id})
+adventure.checkpoints.create!({:tout => "tout san", :description => "desc", :venue_id => venues['4ad4c000f964a5208ceb20e3'].id})
    
