@@ -16,9 +16,15 @@ Checkpoint.delete_all
 
 # testing
 
+
 FakeWeb.allow_net_connect = false
 venues = {}
-["4bded100921d952185016932", "4b05866ef964a520e16122e3", "4b058660f964a520465f22e3", "4b37d793f964a520454725e3", "4ad4c000f964a5208ceb20e3"].each do |id|
+["4bded100921d952185016932", "4b05866ef964a520e16122e3", "4b058660f964a520465f22e3", "4b37d793f964a520454725e3", "4ad4c000f964a5208ceb20e3", 
+  "440fee99f964a520b2301fe3", "41536380f964a5201f1d", "47e2990df964a520434e1fe3",  "40b13b00f964a520aaf31ee3", "43e5cda9f964a520f92e1fe3",
+  "41536380f964a5201f1d", "40b13b00f964a52083f31ee3", "4a5684e3f964a52051b51fe3", "43598100f964a520eb281fe3", "47e2990df964a520434e1fe3",
+  "45f19148f964a520cf431fe3", "43598100f964a520eb281fe3", "40fb0f00f964a520fc0a1fe3", "45fbfa6df964a5206c441fe3", "4b255d5bf964a520b47024e3", 
+  "4b253b76f964a5206b6e24e3", "4beb1a5062c0c92811b4e1d4", "4ac8fc7df964a520c3bd20e3", "4ac900a1f964a520ecbd20e3"
+  ].each do |id|
   FakeWeb.register_uri(:get, "https://api.foursquare.com/v2/venues/#{id}?client_id=#{Adventeur::Application.config.foursquare_id}&client_secret=#{Adventeur::Application.config.foursquare_secret}",
                    :response => File.expand_path("spec/faker/venues/#{id}.json"))
   
@@ -64,8 +70,6 @@ adventure2.checkpoints.create!({:tout => "So much more than just another Austin 
 adventure2.checkpoints.create!({:tout => "Time for some Prototyping, dude!", :description => "Prototype Vintage Design offers furniture, art, fashion, jewelry, lighting, glassware and more in an environment both inviting and inspiring.", :venue_id => venues['4ac8fc7df964a520c3bd20e3'].id, :latitude => venues['4ac8fc7df964a520c3bd20e3'].latitude, :longitude => venues['4ac8fc7df964a520c3bd20e3'].longitude })
 adventure2.checkpoints.create!({:tout => "Vintage finds at reasonable prices for dessert", :description => "Every vintage piece here is a winner, whether it’s a batwing-sleeved dress, a Stevie Nicks–ish crystal pendant, or an appliquéd silk peasant blouse.", :venue_id => venues['4ac900a1f964a520ecbd20e3'].id, :latitude => venues['4ac900a1f964a520ecbd20e3'].latitude, :longitude => venues['4ac900a1f964a520ecbd20e3'].longitude })
 
-# Feathers 4ac900a1f964a520ecbd20e3, 
-# prototype 4ac8fc7df964a520c3bd20e3,   
 # flashback, 
 # big berthas, 
 # uncommon goods, 
