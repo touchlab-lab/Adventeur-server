@@ -12,5 +12,5 @@ Adventeur::Application.routes.draw do
   resources :users, :only => :show
   resources :adventures
   resources :checkpoints
-  
+  match '/api/v1/search/nearest', :to => "api/v1/search#nearest"
 end
