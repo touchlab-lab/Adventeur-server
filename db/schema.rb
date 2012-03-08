@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120308003601) do
+ActiveRecord::Schema.define(:version => 20120308013711) do
 
   create_table "adventures", :force => true do |t|
     t.string   "name"
@@ -53,7 +53,7 @@ ActiveRecord::Schema.define(:version => 20120308003601) do
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
 
   create_table "venues", :force => true do |t|
-    t.integer  "foursquare_id"
+    t.string   "foursquare_id"
     t.string   "name"
     t.string   "address"
     t.decimal  "latitude"
