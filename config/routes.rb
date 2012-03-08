@@ -6,6 +6,7 @@ Adventeur::Application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :registrations, :only => :create
+      resources :checkin, :only => :create
     end
   end
   devise_for :users
