@@ -8,15 +8,13 @@ class Venue < ActiveRecord::Base
   
   def self.fetch_and_add!(id)
     response = HTTParty.get("https://api.foursquare.com/v2/venues/#{id}?client_id=#{Adventeur::Application.config.foursquare_id}&client_secret=#{Adventeur::Application.config.foursquare_secret}")
-    puts id.to_s
-    puts response.to_s
     json = JSON.parse(response.body)
     if (json["meta"]["code"] != 200)
       return false
     end
     
     name = json["response"]["venue"]["name"]
-    address = json["response"]["venue"]["address"]
+    address = json["response"]["venue"]["location"]["address"]
     latitude = json["response"]["venue"]["location"]["lat"]
     longitude = json["response"]["venue"]["location"]["lng"]
     Venue.create!({:name => name, :address => address, :latitude => latitude, :longitude => longitude})

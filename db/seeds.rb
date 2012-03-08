@@ -14,8 +14,12 @@ Venue.delete_all
 Checkpoint.delete_all
 adventure = Adventure.create! :name => 'Startup Bus NYC 2012', :description => 'Description here'
 
+FakeWeb.allow_net_connect = false
 venues = {}
 ["4bded100921d952185016932", "4b05866ef964a520e16122e3", "4b058660f964a520465f22e3", "4b37d793f964a520454725e3", "4ad4c000f964a5208ceb20e3"].each do |id|
+  FakeWeb.register_uri(:get, "https://api.foursquare.com/v2/venues/#{id}?client_id=#{Adventeur::Application.config.foursquare_id}&client_secret=#{Adventeur::Application.config.foursquare_secret}",
+                   :response => File.expand_path("spec/faker/venues/#{id}.json"))
+  
   venues[id] = Venue.fetch_and_add!(id)
 end
 
