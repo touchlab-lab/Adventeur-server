@@ -3,6 +3,7 @@ class Api::V1::RegistrationsController < ActionController::Base
   respond_to :json
   
   def create
+    STDERR.puts params.inspect
     oauth = params['oauth']
     if (!oauth['foursq'].nil?)
       user = User.find_foursq_user(oauth['foursq'])
