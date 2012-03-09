@@ -3,6 +3,7 @@ class Api::V1::CheckinController < ApplicationController
   
   respond_to :json
   def create
+    STDERR.puts "params: '" + params.inspect + "'"
     @checkin = current_user.checkins.build(params[:checkin])
     
     if (@checkin.save!)
