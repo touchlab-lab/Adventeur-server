@@ -94,7 +94,7 @@
 
 /* #Links
 ================================================== */
-	a, a:visited { color: #333; text-decoration: none; outline: 0; }
+	a, a:visited { color: #d8297f; text-decoration: none; outline: 0; }
 	a:hover, a:focus { color: #000; }
 	p a, p a:visited { line-height: inherit; }
 
@@ -143,12 +143,12 @@
 	  border-top: 1px solid #ccc;
 	  border-left: 1px solid #ccc;
 	  padding: 4px 12px;
-	  -moz-border-radius: 12px;
-	  -webkit-border-radius: 12px;
-	  border-radius: 12px;
+	  -moz-border-radius: 3px;
+	  -webkit-border-radius: 3px;
+	  border-radius: 3px;
 	  color: #444;
 	  display: inline-block;
-	  font-size: 18px;
+	  font-size: 11px;
 	  font-weight: bold;
 	  text-decoration: none;
 	  text-shadow: 0 1px rgba(255, 255, 255, .75);
@@ -205,6 +205,7 @@
     border: 0;
     padding: 0;
 	}
+
 
 
 /* #Tabs (activate in tabs.js)
@@ -291,14 +292,14 @@
 	input[type="email"],
 	textarea,
 	select {
-		border: 1px solid #ccc;
+		border: 1px solid #4da0ac;
 		padding: 6px 4px;
 		outline: none;
 		-moz-border-radius: 2px;
 		-webkit-border-radius: 2px;
 		border-radius: 2px;
 		font: 13px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-		color: #777;
+		color: #4da0ac;
 		margin: 0;
 		width: 210px;
 		max-width: 100%;
@@ -312,7 +313,7 @@
 	input[type="email"]:focus,
 	textarea:focus {
 		border: 1px solid #aaa;
- 		color: #444;
+ 		color: #4da0ac;
  		-moz-box-shadow: 0 0 3px rgba(0,0,0,.2);
 		-webkit-box-shadow: 0 0 3px rgba(0,0,0,.2);
 		box-shadow:  0 0 3px rgba(0,0,0,.2); }
@@ -331,7 +332,7 @@
 	legend span {
 		font-weight: normal;
 		font-size: 13px;
-		color: #444; }
+		color: #444;}
 
 /* #Misc
 ================================================== */
@@ -339,5 +340,12 @@
 	.half-bottom { margin-bottom: 10px !important; }
 	.add-bottom { margin-bottom: 20px !important; }
 	.center {text-align: center;}
+	.right {text-align: right; padding-right: 40px;}
+	.mailchimp {
+		background-color: #f2f2f2; 
+		padding: 10px 0 0px 0; 
+		-moz-border-radius: 6px;
+	 	-webkit-border-radius: 6px;
+	 	border-radius: 6px;}
 
 
