@@ -15,5 +15,5 @@ Adventeur::Application.routes.draw do
   resources :checkpoints
   match '/api/v1/search/nearest', :to => "api/v1/search#nearest"
   match '/api/v1/search/intersect', :to => "api/v1/search#intersect"
-  
+  match '/app' => redirect("https://play.google.com/store/apps/details?id=co.aventeur.android" ), :as => :app 
 end
