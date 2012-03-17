@@ -72,6 +72,18 @@ adventure2.checkpoints.create!({:tout => "So much more than just another Austin 
 adventure2.checkpoints.create!({:tout => "Time for some Prototyping, dude!", :description => "Prototype Vintage Design offers furniture, art, fashion, jewelry, lighting, glassware and more in an environment both inviting and inspiring.", :venue_id => venues['4ac8fc7df964a520c3bd20e3'].id, :latitude => venues['4ac8fc7df964a520c3bd20e3'].latitude, :longitude => venues['4ac8fc7df964a520c3bd20e3'].longitude })
 adventure2.checkpoints.create!({:tout => "Vintage finds at reasonable prices for dessert", :description => "Every vintage piece here is a winner, whether it's a batwing-sleeved dress, a Stevie Nicks-ish crystal pendant, or an appliqued silk peasant blouse.", :venue_id => venues['4ac900a1f964a520ecbd20e3'].id, :latitude => venues['4ac900a1f964a520ecbd20e3'].latitude, :longitude => venues['4ac900a1f964a520ecbd20e3'].longitude })
 
+# First Date
+adventure6 = Adventure.create! :name => 'Pamela & Jon\'s First Date', :description => 'This is a slightly fictionalized version of my first date with Pamela, drawing mostly from our first actual date and mixing in our first lunch date. We were married about 6 months after this happened.'
+adventure6.checkpoints.create!({:tout => "First stop: stock up. You're going to a french movie, so pick up some french wine.", :description => "Beaujolais Nouveau in Poland Springs bottles worked for us. Trader Joe's Wine Shop may became a neighborhood staple overnight thanks to their outstanding selection and low prices.", :venue_id => venues['4a319883f964a520fc991fe3'].id, :latitude => venues['4a319883f964a520fc991fe3'].latitude, :longitude => venues['4a319883f964a520fc991fe3'].longitude })
+
+adventure6.checkpoints.create!({:tout => "Sneak in your Beaujolais Nouveau take in some classic Film Noir.", :description => "We saw Classe Tous Risques, a noir gangster film, at The Quad Cinema. That movie hasn't played for a while, but its hard not to find something you'll love at the Quad.", :venue_id => venues['45aa540af964a52032411fe3'].id, :latitude => venues['45aa540af964a52032411fe3'].latitude, :longitude => venues['45aa540af964a52032411fe3'].longitude })
+
+adventure6.checkpoints.create!({:tout => "'Pan-asian' is usually a cop-out, but this small spot is cozy and delicious.", :description => "In real life we went here for our first lunch date, but since we missed any food in this tour, we're retconning this one.", :venue_id => venues['3fd66200f964a5208dea1ee3'].id, :latitude => venues['3fd66200f964a5208dea1ee3'].latitude, :longitude => venues['3fd66200f964a5208dea1ee3'].longitude })
+
+adventure6.checkpoints.create!({:tout => "Explore the seedy underworld of Tokyo...in Manhattan's East Village", :description => "Descend the steps to Decibel, and you'll feel like you've entered another world: Tokyo, around 2am. Close quarters, warm staff, great sake, and killer bar snacks. I love the mackerel. One of the three places in NYC where I'll wait on line.", :venue_id => venues['3fd66200f964a5203de41ee3'].id, :latitude => venues['3fd66200f964a5203de41ee3'].latitude, :longitude => venues['3fd66200f964a5203de41ee3'].longitude })
+
+adventure6.checkpoints.create!({:tout => "Time for something sweet and boozy.", :description => "In truth, we went to Korova Milk Bar, a Kubrick-themed Clockwork Orange take-off. It's long-closed, so try David Chang's Momofuku Milk Bar instead.", :venue_id => venues['4a257482f964a520557e1fe3'].id, :latitude => venues['4a257482f964a520557e1fe3'].latitude, :longitude => venues['4a257482f964a520557e1fe3'].longitude })
+
 # flashback, 
 # big berthas, 
 # uncommon goods, 
